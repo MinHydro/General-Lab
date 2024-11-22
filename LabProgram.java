@@ -1,7 +1,6 @@
 /**
  * LabProgram.java
- * @author Your name
- * @author Partner's name
+ * @author Minh Long Hang
  * CIS 22C, Lab 18
  */
 import java.util.Arrays;
@@ -13,14 +12,20 @@ import java.util.ArrayList;
  * This comparator will compare Integer objects using compare().
  */
 class IntComparator implements Comparator<Integer> {
-    // Write compare method here
+    @Override
+    public int compare(Integer x, Integer y) {
+        return x.compareTo(y);
+    }
 }
 
 /*
  * This comparator will compare String objects using compare().
  */
 class StrComparator implements Comparator<String> {
-    // Write compare method here
+    @Override
+    public int compare(String x, String y) {
+        return x.compareTo(y);
+    }
 }
 
 public class LabProgram {
